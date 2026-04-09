@@ -59,7 +59,7 @@ body{
     background-color: rgb(23, 9, 46);
 }
 #tarefas{
-    background-color: rgba(0, 255, 170, 0.281);
+    background-color: rgba(0, 255, 170, 0.185);
     backdrop-filter: blur(50px);
     height: 500px;
     width: 900px;
