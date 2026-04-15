@@ -8,7 +8,7 @@ botao.addEventListener("click", ()=>{
     div.textContent = texto.value
     div.style.width = '100px'
     document.getElementById("tarefas").append(div)
-    
+
 
 
 
