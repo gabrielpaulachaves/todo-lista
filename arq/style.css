@@ -65,4 +65,15 @@ body{
     width: 900px;
     border-radius: 10px;
 }
+.tarefa{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
 
