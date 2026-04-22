@@ -73,7 +73,11 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    
+    align-items: center;   
+}
+.apagar{
+    font-size: 20px;
+    color: red;
+    font-weight: bolder;
 }
 

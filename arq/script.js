@@ -1,12 +1,21 @@
 const botao = document.getElementById("bTnadd")
+const texto = document.getElementById("texto")
 const paredetarefas = document.getElementById("tarefas")
+const apagar = createElement("p").classList.add("apagar").value = "X"
 
 botao.addEventListener("click", ()=>{
-    console.log("funcionando")
-    const texto = document.getElementById("texto")
-    const div = document.createElement("div")
+    if(texto.value = " "){
+        console.log("insira um texto")
+    }else{
+     console.log("funcionando")
+    const div = document.createElement("div").classList.add("tarefa")
     div.append(texto.value)
-    div.style.width = '100px'
-    div.style.height = 
-    paredetarefas.prepend(div)
+    div.append(apagar)
+    paredetarefas.append(div)  
+    texto.innerHTML = " "     
+    }
+})
+apagar.addEventListener("click",(e)=>{
+    e.relatedtarget.remove()
+
 })
