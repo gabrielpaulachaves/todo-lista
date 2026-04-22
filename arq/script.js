@@ -16,6 +16,5 @@ botao.addEventListener("click", ()=>{
     }
 })
 apagar.addEventListener("click",(e)=>{
-    e.relatedtarget.remove()
-
+    e.currentTarget.remove()
 })
