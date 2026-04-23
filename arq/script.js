@@ -1,20 +1,28 @@
 const botao = document.getElementById("bTnadd")
 const texto = document.getElementById("texto")
 const paredetarefas = document.getElementById("tarefas")
-const apagar = createElement("p").classList.add("apagar").value = "X"
 
 botao.addEventListener("click", ()=>{
-    if(texto.value = " "){
-        console.log("insira um texto")
+    if(texto.value.trim() == ""){
+        console.log("favor, adicionar texto")
     }else{
-     console.log("funcionando")
-    const div = document.createElement("div").classList.add("tarefa")
+    console.log("funcionando")
+    let div = document.createElement("div")
+    div.classList.add("tarefa")
+    let apagar = document.createElement("p")
+    apagar.textContent = "X"
+    apagar.classList.add("apagar")
     div.append(texto.value)
     div.append(apagar)
-    paredetarefas.append(div)  
-    texto.innerHTML = " "     
-    }
+    paredetarefas.prepend(div)
+    setTimeout(()=>
+        div.classList.add("tarefanimado"), 1) 
+    apagar.addEventListener("click",(e)=>{
+    e.currentTarget.parentElement.remove()
+    })
+    texto.value = ""
+    texto.focus()
+} 
+
 })
-apagar.addEventListener("click",(e)=>{
-    e.currentTarget.remove()
-})
+
